@@ -1,0 +1,38 @@
+.login
+    font-weight: 500
+    font-size: 16px
+    line-height: 30px
+    color: $d
+    width: 120px
+    height: 50px
+    background-color: #FFFFFF
+    border: 1px solid #F1F1F1
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+    border-radius: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .3s
+    &:hover
+        border: 1px solid #A6B3C8
+    svg
+        margin-right: 7px
+        width: 24px
+        height: 24px
+
+@media (max-width: 768px)
+    .login
+        font-size: 0
+        width: auto
+        height: auto
+        padding: 0
+        border: none
+        box-shadow: none
+        background-color: transparent
+        &:hover
+            border: none
+            color: #DF3663
+        svg
+            margin-right: 0
+            width: 30px
+            height: 30px

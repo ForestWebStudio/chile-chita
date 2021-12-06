@@ -38,10 +38,6 @@ ul[class],
 ol[class]
     list-style: none
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class])
-    text-decoration-skip-ink: auto
-
 /* Упрощаем работу с изображениями */
 img
     max-width: 100%
@@ -61,10 +57,15 @@ select
     margin: 0
     padding: 0
 
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce)
-*
-    animation-duration: 0.01ms !important
-    animation-iteration-count: 1 !important
-    transition-duration: 0.01ms !important
-    scroll-behavior: auto !important
+input,
+button
+    border: none
+    outline: none
+    background-color: transparent
+
+button
+    cursor: pointer
+
+a
+    text-decoration: none
+

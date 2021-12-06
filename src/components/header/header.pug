@@ -1,2 +1,11 @@
 header.header 
-    h1 Шапка сайта
+    .container
+        .header__inner 
+            a.header__logo.logo(href="index.html") 
+                +icon('logo', 'header__logo')
+            include ../search/search
+            button.header__address(type="button") 
+                +icon('address')
+                span Укажите адрес доставки
+            include ../basket/basket
+            include ../login/login
