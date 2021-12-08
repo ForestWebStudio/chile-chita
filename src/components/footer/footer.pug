@@ -1,2 +1,62 @@
 footer.footer 
-    h1 Подвал сайта
+    .container 
+        .footer__inner 
+            .footer__logo 
+                a.logo(href="#") 
+                    +icon('logo-big')
+                h5 Мы готовим, пока вы отдыхаете
+                p.footer__copy © 2021 «ЧилиЧита». Все права защищены.
+            .footer__menu.footer__menu--border
+                h4 Блюда и кухни
+                nav.menu 
+                    ul.menu__list 
+                        li 
+                            a(href="#") Итальянская кухня
+                        li 
+                            a(href="#") Грузинская кухня
+                        li 
+                            a(href="#") Японская кухня
+                        li 
+                            a(href="#") Фаст фуд
+                        li 
+                            a(href="#") Десерты
+            .footer__menu 
+                h4 Меню
+                nav.menu 
+                    ul.menu__list 
+                        li 
+                            a(href="#") Для ресторанов
+                        li 
+                            a(href="#") Курьерам
+                        li 
+                            a(href="#") Пресс-центр
+                        li 
+                            a(href="#") Условия акций
+                        li 
+                            a(href="#") Контакты
+            .footer__info 
+                .footer__info-social 
+                    h5 Мы в социальных сетях:
+                    ul.social__list 
+                        li 
+                            a(href="#") 
+                                +icon('facebook', 'social')
+                        li 
+                            a(href="#") 
+                                +icon('instagram', 'social')
+                        li 
+                            a(href="#") 
+                                +icon('twitter', 'social')
+                a.privacy(href="#") Политика конфиденциальности
+                p.develop 
+                    | Разработка сайта —
+                    a(href="#")
+
+
+
+
+
+
+
+
+                    
