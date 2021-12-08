@@ -1,0 +1,29 @@
+.preloader
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: #fff
+    z-index: 999
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 100px
+        height: 100px
+    &__hide
+        animation: preloader 1s
+    &__none
+        display: none
+
+
+@keyframes preloader
+    0%
+        opacity: 1
+    100%
+        opacity: 0
+
+

@@ -1,0 +1,81 @@
+.hero
+    overflow: hidden
+    &__inner
+        overflow: initial
+    &__item
+        padding: 0 10px
+        border-radius: 30px
+        img
+            border-radius: 30px
+    .swiper
+        &-slide
+            transition: opacity .3s
+            opacity: 0.1
+        &-slide-active,
+        &-slide-prev,
+        &-slide-next
+            opacity: 1
+            transition: opacity .3s
+
+    &__button
+        width: 50px
+        height: 50px
+        background: #FFFFFF
+        border: 1px solid #F1F1F1
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        border-radius: 100%
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+        transition: .3s
+        &:hover
+            box-shadow: 0px 4px 30px rgba($hover, 0.9)
+        &-prev
+            left: -12px
+        &-next
+            right: -12px
+
+    &__bullets
+        display: flex
+        justify-content: center
+        align-items: center
+        left: 50%
+        padding-top: 15px
+        display: none
+        
+        .swiper-pagination-bullet
+            background-color: $d
+            opacity: 0.1
+            transition: .3s
+        .swiper-pagination-bullet-active
+            transition: .3s
+            opacity: 1
+
+.arrow
+    width: 24px
+    height: 24px
+    fill: $d
+
+@media (max-width: 991px)
+    .hero
+        &__button
+            display: none
+        .swiper
+            &-slide
+                transition: opacity .3s
+                opacity: 0.1
+            &-slide-active
+                opacity: 1
+                transition: opacity .3s
+        &__item
+            padding: 0 5px
+            img
+                width: 100%
+        &__bullets
+            display: flex

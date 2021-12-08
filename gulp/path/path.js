@@ -21,7 +21,7 @@ module.exports = {
 			fonts: 'src/fonts/*',
 			favicon_lg: 'src/images/favicon-lg.png',
 			favicon_sm: 'src/images/favicon-sm.png',
-			libs: 'src/libs/**/*'
+			libs: 'src/libs/*'
 		},
 		watch: { // Watch files
 			json: 'src/base/data/*.json',

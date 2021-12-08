@@ -1,3 +1,4 @@
+import './preloader/preloader'
 import './header/header'
 import './basket/basket'
-import './footer/footer'
+import './hero/hero'

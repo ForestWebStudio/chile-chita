@@ -1,2 +1,25 @@
-section.hero 
-    img(src="images/no-foto.webp", alt="")
+.hero
+    .container
+        .hero__inner.swiper 
+            .hero__items.swiper-wrapper 
+                a.hero__item.swiper-slide(href="#")
+                    img(src="images/hero-item-1.webp", alt="")
+                a.hero__item.swiper-slide(href="#")
+                    img(src="images/hero-item-2.webp", alt="")
+                a.hero__item.swiper-slide(href="#")
+                    img(src="images/hero-item-3.webp", alt="")
+                a.hero__item.swiper-slide(href="#")
+                    img(src="images/hero-item-1.webp", alt="")
+                a.hero__item.swiper-slide(href="#")
+                    img(src="images/hero-item-2.webp", alt="")
+                a.hero__item.swiper-slide(href="#")
+                    img(src="images/hero-item-3.webp", alt="")
+
+            .hero__button-next.hero__button
+                +icon('next', 'arrow')
+            .hero__button-prev.hero__button
+                +icon('prev', 'arrow')
+
+            .hero__bullets
+
+            
