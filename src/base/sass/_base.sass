@@ -26,23 +26,49 @@ body
     margin: 0 auto
     padding: 0 15px
 
+.container-d
+    max-width: 1450px
+    margin: 0 auto
+    padding: 0 15px
+
 .container-fluid
     max-width: 1450px
     margin: 0 auto
     padding: 0 15px
 
+.title
+    h2
+        font-weight: 600
+        font-size: 48px
+        line-height: 22px
+        color: $d
+        margin-bottom: 37px
+        text-align: center
+
 @media (max-width: 1500px)
+    .container-d,
     .container
         max-width: 1200px
 
 @media (max-width: 1200px)
+    .container-d,
     .container
         max-width: 960px
 
 @media (max-width: 991px)
+    .container-d,
     .container
         max-width: 560px
 
 @media (max-width: 768px)
+    .container-d,
     .container
         max-width: 87%
+    .tittle
+        h2
+            font-size: 28px
+            line-height: 22px
+
+@media (max-width: 650px)
+    .container-d
+        max-width: 100%

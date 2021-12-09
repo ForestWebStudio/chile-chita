@@ -1,0 +1,187 @@
+.categories
+    margin-bottom: 140px
+    &__title
+        h2
+            margin-bottom: 57px
+    &__items
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 20px
+    &__item
+        display: block
+        background-color: #FFFFFF
+        border: 1px solid #F1F1F1
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        overflow: hidden
+        &-img
+            height: 290px
+            img
+                max-width: 100%
+                height: 100%
+                width: 100%
+                object-fit: cover
+                object-position: center
+        &-info
+            padding: 24px 34px 22px
+            border-radius: 0 0 30px 30px
+            border: 1px solid transparent
+            border-top: none
+            transition: .3s
+            h4
+                font-weight: 600
+                font-size: 20px
+                color: $d
+                margin-bottom: 14px
+
+.categories__info-box
+    display: flex
+    align-items: center
+    span
+        font-weight: 400
+        font-size: 13px
+        display: flex
+        align-items: center
+        color: $d
+        &:not(:last-child)
+            margin-right: 17px
+
+.categories__item:hover .categories__item-info
+    border: 1px solid #FA5581
+    border-top: none
+
+.develop__item-img,
+.opening__item-img
+    position: relative
+
+.opening__item-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(89.74deg, rgba(252, 185, 84, 0.8) 1.27%, rgba(59, 255, 55, 0.768) 101.37%)
+    h4
+        font-weight: 600
+        font-size: 30px
+        line-height: 33px
+        color: #fff
+        text-align: center
+        max-width: 200px
+
+.develop__item-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(255, 255, 255, 0.8)
+    h4
+        font-weight: 600
+        font-size: 30px
+        line-height: 33px
+        color: $d
+        opacity: 0.5
+
+.icon
+    &-categories
+        fill: #A6B3C8
+        margin-right: 6px
+    &-rub
+        width: 10px
+        height: 12px
+    &-time
+        width: 16px
+        height: 16px
+    &-star
+        width: 20px
+        height: 20px
+    &-calendar
+        width: 78px
+        height: 78px
+        fill: #fff
+        margin-bottom: 13px
+    &-develop
+        width: 82px
+        height: 82px
+        margin-bottom: 25px
+        fill: $d
+        opacity: 0.5
+
+@media (max-width: 1200px)
+    .categories__item-info
+        padding-left: 15px
+        padding-right: 15px
+
+@media (max-width: 991px)
+    .categories
+        &__items
+            grid-template-columns: repeat(2, 1fr)
+        &__price
+            display: none
+    span.categories__time
+        display: none
+    .categories__item-img
+        height: 200px
+
+@media (max-width: 768px)
+    .categories
+        margin-bottom: 40px
+
+    .title
+        h2
+            font-size: 28px
+            line-height: 22px
+            margin-bottom: 20px
+
+@media (max-width: 650px)
+    .categories__items
+        grid-gap: 10px
+    .categories__item-info
+        h4
+            font-size: 16px
+            line-height: 18px
+    .develop__item-info,
+    .opening__item-info
+        h4
+            font-size: 16px
+            line-height: 18px
+            max-width: 110px
+
+    .categories__item-img
+        height: 150px
+
+    span.categories__price
+        display: none
+
+    .categories__item-info
+        padding-top: 10px
+        padding-bottom: 8px
+
+    .categories__item
+        border-radius: 20px
+
+    .icon
+        &-calendar
+            width: 43px
+            height: 43px
+            margin-bottom: 7px
+        &-develop
+            width: 43px
+            height: 43px
+            margin-bottom: 12px
+
+@media (max-width: 425px)
+    .categories__item-img
+        height: 135px
+    .categories__item-info 
+        h4
+            margin-bottom: 6px
