@@ -160,22 +160,17 @@
         display: inline-block
         margin-right: 5px
 
+.cart__btn
+    background-color: #F1A7BB
+    display: none
 
-.cart__btn-progress
-    position: absolute
-    width: 100%
-    height: 100%
-    left: 0
-    top: 0
-    font-size: 0
+.cart__btn-send
+    background-color: #DF3663
+    transition: background-color .3s
+    &:disabled
+        background-color: #F1A7BB
+        &:hover
+            background-color: #F1A7BB
+    &:hover
+        background-color: $hover
 
-.goalProgress
-    padding: 0
-    height: 100%
-    background-color: rgba(#DF3663, 0.2)
-
-
-.progressBar
-    padding: 0
-    height: 100%
-    background-color: rgba(#DF3663, 0.3)

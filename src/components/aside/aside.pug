@@ -96,11 +96,10 @@ aside.cart
                     .cart__submit-price 
                         span 1 750
                         | ₽
-            button.cart__btn(type="submit" disabled) 
-                .cart__btn-inner
-                    | Добавить еще на
-                    input(type="text" value="120")
-                    | ₽
-                .cart__btn-progress#progress
+            button.cart__btn(type="button" disabled) 
+                | Добавить еще на 
+                span 120 
+                | ₽
+            button.cart__btn-send(type="submit" disabled) Оформить заказ
 
 
