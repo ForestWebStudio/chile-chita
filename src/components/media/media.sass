@@ -1,0 +1,130 @@
+@media (max-width: 1500px)
+    .about__content
+        max-width: 100%
+        width: 70%
+    .cart
+        max-width: 100%
+        width: 30%
+    .cards
+        grid-template-columns: repeat(2, 1fr)
+    .about__banner-list
+        display: grid
+        grid-column-gap: 20px
+        grid-row-gap: 10px
+        grid-template-columns: repeat(2, 1fr)
+        li
+            justify-content: start
+        li + li 
+            margin: 0
+
+@media (max-width: 1150px)
+    .about__content
+        width: 65%
+    .cart
+        width: 35%
+    .about__banner-header
+        flex-direction: column
+        h1
+            margin-bottom: 30px
+    .about__banner-content
+        flex-direction: column
+        align-items: flex-start
+    .about__banner-list
+        margin-bottom: 30px
+
+@media (max-width: 991px)
+    .about__inner
+        display: block
+    .about__content
+        width: 100%
+        margin-right: 0
+    .about__banner-content
+        flex-direction: row
+        align-items: center
+    .about__banner-list
+        margin-bottom: 0
+    .about__banner-header 
+        flex-direction: row
+        h1
+            margin-bottom: 0
+    .cart
+        width: 100%
+        margin-bottom: 80px
+    .container-mb
+        max-width: 720px
+        margin: 0 auto
+        padding: 0 15px
+    .cart
+        position: static
+    .about__inner
+        display: flex
+        flex-direction: column
+    .about__content
+        order: 1
+    .cart__list
+        margin-bottom: 50px
+
+@media (max-width: 768px)
+    .cards
+        grid-gap: 10px
+    .about__banner
+        padding: 30px
+    .about__menu
+        margin-bottom: 50px
+    .stock
+        margin-bottom: 80px
+    .sets
+        margin-bottom: 80px
+    .map
+        margin-bottom: 80px
+    .about__banner
+        min-height: auto
+    .about__banner-header
+        flex-direction: column
+        h1
+            margin-bottom: 30px
+            line-height: 35px
+    .about__banner-content
+        flex-direction: column
+        align-items: flex-start
+    .about__banner-list
+        margin-bottom: 30px
+    .card__info
+        padding: 10px
+        padding-top: 0
+    .about__banner::before
+        background: rgba(#000, 0.7)
+        height: 100%
+
+@media (max-width: 670px)
+    .cards
+        grid-template-columns: repeat(1, 1fr)
+        grid-gap: 20px
+    .about__menu-list
+        flex-wrap: wrap
+
+@media (max-width: 550px)
+    .map
+        height: auto
+    .map__inner
+        display: none
+    .map__info
+        position: static
+        width: 100%
+    .about__banner-list
+        grid-template-columns: repeat(1, 1fr)
+    .about__banner-link
+        width: 100%
+    .about__banner
+        padding: 20px
+
+@media (max-height: 820px) 
+    .cart__list
+        height: 300px
+        overflow: scroll
+
+@media (max-height: 700px) 
+    .cart
+        height: 600px
+    .cart__list
+        margin-bottom: 41px
