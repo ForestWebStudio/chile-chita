@@ -1,0 +1,181 @@
+.cart
+    max-width: 340px
+    height: auto
+    width: 100%
+    padding: 10px
+    padding-top: 35px
+    background-color: #FFFFFF
+    border: 1px solid #F1F1F1
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+    border-radius: 30px
+
+.cart__form-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 20px
+    margin-bottom: 20px
+    h4
+        font-weight: 600
+        font-size: 24px
+        line-height: 22px
+        color: #DF3663
+    a
+        width: 24px
+        height: 24px
+
+        &:hover svg
+            fill: $hover
+    svg
+        width: 100%
+        height: 100%
+        fill: $d3
+        transition: fill .3s
+
+.cart__list
+    padding: 0 20px
+    margin: 0
+    margin-bottom: 100px
+
+.cart__item
+    padding-top: 20px
+    border-top: 1px solid #F1F1F1
+    &:not(:last-child)
+        margin-bottom: 18px
+    &:last-child
+        padding-bottom: 15px
+        padding-top: 14px
+        border-bottom: 1px solid #F1F1F1
+
+.cart__item-top
+    display: flex
+    justify-content: space-between
+    font-size: 16px
+    color: $d
+    margin-bottom: 4px
+    h5
+        font-weight: 500
+        font-size: inherit
+        line-height: 20px
+        margin: 0
+        padding: 0
+        max-width: 200px
+
+.cart__item-price
+    font-weight: 600
+    span
+        display: inline-block
+        margin-right: 5px
+
+.cart__item-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+        font-size: 11px
+        line-height: 16px
+
+.cart__item-count
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 80px
+    font-size: 12px
+    input
+        max-width: 15px
+        font-weight: inherit
+        font-size: inherit
+        color: inherit
+        margin-left: auto
+    span
+        margin-right: auto
+
+.cart__item-btn
+    width: 16px
+    height: 16px
+    border-radius: 100%
+    &:hover svg
+        fill: $hover
+    svg
+        width: 100%
+        height: 100%
+        fill: $d3
+        transition: fill .3s
+
+.cart__item-size
+    font-weight: 400
+    font-size: 12px
+    span
+        display: inline-block
+        margin-right: 3px
+
+.cart__submit
+    background-color: rgba($d3, 0.1)
+    border-radius: 20px
+    padding: 20px
+    button
+        font-weight: 700
+        font-size: 14px
+        color: #fff
+        padding: 15px 0
+        line-height: 30px
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        width: 100%
+        position: relative
+        overflow: hidden
+
+.cart__btn-inner
+    position: relative
+    z-index: 2
+    input
+        width: 40px
+        padding-left: 5px
+        color: #fff
+
+.cart__submit-info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 8px
+
+.cart__submit-total,
+.cart__submit-time
+    span
+        display: block
+        margin-bottom: 4px
+
+.cart__submit-link
+    font-size: 30px
+    color: $d
+    span
+        display: inline-block
+        border-bottom: 1px dashed rgba($d, 0.3)
+        padding-bottom: 6px
+
+.cart__submit-price
+    font-weight: 600
+    font-size: 30px
+    color: $d
+    span
+        display: inline-block
+        margin-right: 5px
+
+
+.cart__btn-progress
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    font-size: 0
+
+.goalProgress
+    padding: 0
+    height: 100%
+    background-color: rgba(#DF3663, 0.2)
+
+
+.progressBar
+    padding: 0
+    height: 100%
+    background-color: rgba(#DF3663, 0.3)

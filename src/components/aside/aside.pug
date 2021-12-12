@@ -1,0 +1,106 @@
+aside.cart 
+    form.cart__form(action="#") 
+        .cart__form-header
+            h4 Мой заказ
+            a(href="#")
+                +icon('delete')
+        ul.cart__list
+            li.cart__item
+                .cart__item-top 
+                    h5 Суши Лосось 
+                    .cart__item-price 
+                        span 400
+                        | ₽
+                .cart__item-bottom 
+                    .cart__item-count 
+                        button.cart__item-btn.cart__item-btn--minus(type="button") 
+                            +icon('minus')
+                        input(type="text" value="1")
+                        span шт.
+                        button.cart__item-btn.cart__item-btn--plus(type="button") 
+                            +icon('plus')
+                    .cart__item-size 
+                        span 60
+                        | г.
+            li.cart__item
+                .cart__item-top 
+                    h5 Ролл Краб в маменори
+                    .cart__item-price 
+                        span 520
+                        | ₽
+                .cart__item-bottom 
+                    .cart__item-count 
+                        button.cart__item-btn.cart__item-btn--minus(type="button") 
+                            +icon('minus')
+                        input(type="text" value="1")
+                        span шт.
+                        button.cart__item-btn.cart__item-btn--plus(type="button") 
+                            +icon('plus')
+                    .cart__item-size 
+                        span 60
+                        | г.
+            li.cart__item
+                .cart__item-top 
+                    h5 Сашими Лосось 
+                    .cart__item-price 
+                        span 410
+                        | ₽
+                .cart__item-bottom 
+                    .cart__item-count 
+                        button.cart__item-btn.cart__item-btn--minus(type="button") 
+                            +icon('minus')
+                        input(type="text" value="1")
+                        span шт.
+                        button.cart__item-btn.cart__item-btn--plus(type="button") 
+                            +icon('plus')
+                    .cart__item-size 
+                        span 60
+                        | г.
+            li.cart__item
+                .cart__item-top 
+                    h5 Баттера суши острый лосось 
+                    .cart__item-price 
+                        span 4120
+                        | ₽
+                .cart__item-bottom 
+                    .cart__item-count 
+                        button.cart__item-btn.cart__item-btn--minus(type="button") 
+                            +icon('minus')
+                        input(type="text" value="1")
+                        span шт.
+                        button.cart__item-btn.cart__item-btn--plus(type="button") 
+                            +icon('plus')
+                    .cart__item-size 
+                        span 60
+                        | г.
+            li.cart__item
+                .cart__item-top 
+                    h5 Доставка 
+                    .cart__item-price 
+                        span 4120
+                        | ₽
+                .cart__item-bottom
+                    p Закажите еще на 
+                        span 30 
+                        | ₽ для бесплатной доставки
+
+        .cart__submit 
+            .cart__submit-info
+                .cart__submit-time 
+                    span Время доставки:
+                    a.cart__submit-link(href="#") 
+                        | ~
+                        span 30 мин
+                .cart__submit-total
+                    span Итого:
+                    .cart__submit-price 
+                        span 1 750
+                        | ₽
+            button.cart__btn(type="submit" disabled) 
+                .cart__btn-inner
+                    | Добавить еще на
+                    input(type="text" value="120")
+                    | ₽
+                .cart__btn-progress#progress
+
+

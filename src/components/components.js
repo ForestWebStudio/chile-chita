@@ -1,3 +1,5 @@
 import './header/header'
 import './basket/basket'
 import './hero/hero'
+import './aside/aside'
+import './menu/menu'
