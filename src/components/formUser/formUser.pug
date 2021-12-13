@@ -1,0 +1,141 @@
+.form__user 
+    .form__user-tabs 
+        a.form__user-tab.active(href="##" data-tab="#tab_1") 
+            +icon('car')
+            | Доставка по адресу
+        a.form__user-tab(href="##" data-tab="#tab_2") 
+            +icon('map')
+            | Самовывоз из ресторана
+    .form__user-items 
+        .form__user-item.active#tab_1 
+            h3 Контактные данные
+            .form__user-name.form__title 
+                h4 Данные получателя
+                .form__user-inputs.form__inputs 
+                    .form__input
+                        input(type="text" id="name" required)
+                        label(for="name") 
+                            | Ваше имя 
+                            i *
+                    .form__input
+                        input(type="phone" id="phone" required)
+                        label(for="phone") 
+                            | Ваше телефон 
+                            i *
+            .form__user-address.form__title 
+                h4 Адрес доставки
+                .form__input.form__input-mb 
+                    input(type="text" id="street" required)
+                    label(for="street") Улица
+                .form__input-box    
+                    .form__input 
+                        input(type="text" id="home" required)
+                        label(for="home") Дом
+                    .form__input 
+                        input(type="text" id="entrance" required)
+                        label(for="entrance") Подъезд
+                    .form__input 
+                        input(type="text" id="floor" required)
+                        label(for="floor") Этаж
+                    .form__input 
+                        input(type="text" id="apartment" required)
+                        label(for="apartment") Квартира
+            .form__user-time.form__title 
+                h4 Время доставки
+                select.form__user-select
+                    option(value="1") Сегодня: 30 мин
+                    option(value="2") ко времени
+            .form__user-pay.form__title
+                h4 Оплата
+                .form__user-ways 
+                    input(type="radio" name="pay2" id="cash2")
+                    label(for="cash2") 
+                        strong Наличными курьеру
+                        span При получении заказа
+
+                    input(type="radio" name="pay2" id="cart2")
+                    label(for="cart2") 
+                        strong Картой курьеру
+                        span Картами Visa, #[br] MasterCard, Мир
+                    input(type="radio" name="pay2" id="site2")
+                    label(for="site2") 
+                        strong Картой на сайте
+                        span Картами Visa, #[br] MasterCard, Мир
+                    input(type="radio" name="pay2" id="pickup2")
+                    label(for="pickup2") 
+                        strong При самовывозе
+                        span Оплата в магазине
+            .form__user-comment.form__title
+                h4 Комментарий
+                textarea(name="comment")
+
+        .form__user-item#tab_2 
+            h3 Контактные данные
+            .form__user-name.form__title 
+                h4 Данные получателя
+                .form__user-inputs.form__inputs 
+                    .form__input
+                        input(type="text" id="name" required)
+                        label(for="name") 
+                            | Ваше имя 
+                            i *
+                    .form__input
+                        input(type="phone" id="phone" required)
+                        label(for="phone") 
+                            | Ваше телефон 
+                            i *
+            .form__user-pickup.form__title 
+                h4 Адрес самовывоза
+                .form__user-inner
+                    .map__info-items 
+                        .map__info-item
+                            +icon('phone')
+                            span Телефон
+                            strong +7 (596) 569-66-82
+                            a(href="#") Перезвоните мне
+                        .map__info-item.map__info-address
+                            +icon('marker')   
+                            span Адрес
+                            strong г. Чита, ул. Хабаровская, 70
+                        .map__info-item.map__info-social
+                            +icon('social')
+                            span Instagram
+                            a(href="#") Yaposhka75
+                    .form__info-map#map
+            .form__user-time.form__title 
+                h4 Время доставки
+                select.form__user-select
+                    option(value="1") Сегодня: 30 мин
+                    option(value="2") ко времени
+            .form__user-pay.form__title
+                h4 Оплата
+                .form__user-ways 
+                    input(type="radio" name="pay" id="cash")
+                    label(for="cash") 
+                        strong Наличными курьеру
+                        span При получении заказа
+
+                    input(type="radio" name="pay" id="cart")
+                    label(for="cart") 
+                        strong Картой курьеру
+                        span Картами Visa, #[br] MasterCard, Мир
+                    input(type="radio" name="pay" id="site")
+                    label(for="site") 
+                        strong Картой на сайте
+                        span Картами Visa, #[br] MasterCard, Мир
+                    input(type="radio" name="pay" id="pickup")
+                    label(for="pickup") 
+                        strong При самовывозе
+                        span Оплата в магазине
+            .form__user-comment.form__title
+                h4 Комментарий
+                textarea(name="comment")
+        button(type="submit" disabled) Оформить заказ
+        .form__user-police
+            input(type="checkbox" id="police")
+            label(for="police") 
+                | Нажимая на кнопку «Оформить заказ», я даю согласие на обработку 
+                i персональных данных
+
+
+
