@@ -70,6 +70,7 @@
             background-color: $hover
 
 .menu__list
+    padding: 0
     li
         padding-left: 22px
         position: relative
@@ -104,6 +105,11 @@
     margin-top: 30px
     font-size: 14px
     line-height: 34px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    img
+        margin-left: 3px
 
 .icon
     &-facebook
@@ -115,6 +121,9 @@
     &-twitter
         width: 16px
         height: 13px
+
+.footer.active
+    display: none
 
 @media (max-width: 1366px)
     .footer
@@ -138,13 +147,14 @@
             border: none
 
 @media (max-width: 768px)
+    .footer
+        padding-bottom: 74px
     .footer__menu
         display: none
 
 @media (max-width: 650px)
     .footer
         padding-top: 46px
-        padding-bottom: 43px
     .footer__logo
         padding-bottom: 32px
         margin-bottom: 16px

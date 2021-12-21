@@ -1,12 +1,27 @@
-const menuLink = document.querySelectorAll('.about__menu-list a')
+const aboutMenu = document.querySelectorAll('.about__menu a')
 
-menuLink.forEach((item) => {
-    item.addEventListener('click', () => {
+aboutMenu.forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault()
+        let currentBtn = item
+        const href = this.getAttribute('href').substring(1)
+        const scrollTarget = document.getElementById(href)
+        const topOffset = 200
+        const elementPosition = scrollTarget.getBoundingClientRect().top
+        const offsetPosition = elementPosition - topOffset
 
-        menuLink.forEach((item) => {
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        })
+
+        aboutMenu.forEach(item => {
             item.classList.remove('active')
         })
 
-        item.classList.add('active')
+        currentBtn.classList.add('active')
     })
 })
+
+
+

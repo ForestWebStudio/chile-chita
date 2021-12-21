@@ -1,0 +1,79 @@
+.modal-time
+    h4
+        margin-bottom: 27px
+
+.modal-time__tabs
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #F6F7F9
+    border-radius: 40px
+    padding: 10px
+    margin-bottom: 30px
+
+    button.modal-time__tab
+        background-color: transparent
+        width: 170px
+        height: 40px
+        font-weight: 600
+        font-size: 15px
+        line-height: 30px
+        color: #A6B3C8
+        box-shadow: none
+
+    button.modal-time__tab.active
+        background-color: #fff
+        color: $d
+
+.modal-time__items
+    margin-bottom: 30px
+    display: none
+
+.modal-time__items.active
+    display: block
+
+.modal-time__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    position: relative
+    label
+        width: 100%
+        font-size: 20px
+        line-height: 22px
+        color: $d
+        cursor: pointer
+        position: relative
+        -moz-user-select: none
+        -webkit-user-select: none
+        -ms-user-select: none
+        user-select: none
+        transition: color .3s
+        &:hover
+            color: $d2
+        &::after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            background-image: url('../images/check.webp')
+            background-repeat: no-repeat
+            width: 24px
+            height: 26px
+            opacity: 0
+
+    input
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        position: absolute
+
+    input:checked + label
+        font-weight: 600
+        &:after
+            opacity: 1
+
+.modal-time__item + .modal-time__item
+    margin-top: 30px

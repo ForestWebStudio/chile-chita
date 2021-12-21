@@ -2,7 +2,7 @@ footer.footer
     .container-fluid 
         .footer__inner 
             .footer__logo 
-                a.logo(href="#") 
+                a.logo(href="/") 
                     +icon('logo-big')
                 h5 Мы готовим, пока вы отдыхаете
                 p.footer__copy © 2021 «ЧилиЧита». Все права защищены.
@@ -51,6 +51,13 @@ footer.footer
                 p.develop 
                     | Разработка сайта —
                     a(href="#")
+                        img(src="images/forest.webp", alt="")
+
+include ../adress/adress
+include ../bid/bid
+include ../processed/processed
+include ../time/time
+include ../navbar/navbar
 
 
 

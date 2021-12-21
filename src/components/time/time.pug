@@ -1,0 +1,53 @@
+.modal.modal-time.title#modal-time(style="display: none;")
+    h4 Время доставки
+    form(action="#")
+        .modal-time__tabs 
+            button.modal-time__tab(type="button" data-tab="#tab_today") Сегодня
+            button.modal-time__tab(type="button" data-tab="#tab_tomorrow") Завтра
+        .modal-time__items#tab_today 
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-1" checked)
+                label(for="time-1") Сегодня: 30 мин
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-2")
+                label(for="time-2") 17:00
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-3")
+                label(for="time-3") 17:30
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-4")
+                label(for="time-4") 18:00
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-5")
+                label(for="time-5") 18:30
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-6")
+                label(for="time-6") 19:00
+
+        .modal-time__items#tab_tomorrow                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-7")
+                label(for="time-7") 17:00
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-8")
+                label(for="time-8") 17:30
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-9")
+                label(for="time-9") 18:00
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-10")
+                label(for="time-10") 18:30
+                
+            .modal-time__item
+                input(type="radio" name="modal-time" id="time-11")
+                label(for="time-11") 19:00
+                
+        button.modal(type="submit") Выбрать

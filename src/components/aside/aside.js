@@ -1,7 +1,18 @@
+const cartLink = document.querySelector('.cart__form-header a')
+const cartDelete = document.querySelector('.cart__delete')
+const orderingDelete = document.querySelector('.ordering__aside-header a')
 
-$(document).ready(function () {
-    $('#progress').goalProgress({
-        goalAmount: 2000,
-        currentAmount: 1750,
-    });
-});
+if(cartLink) {
+    cartLink.addEventListener('click', () => {
+        cartLink.classList.toggle('active')
+        cartDelete.classList.toggle('active')
+    })
+}
+
+
+if (orderingDelete) {
+    orderingDelete.addEventListener('click', () => {
+        orderingDelete.classList.toggle('active')
+        cartDelete.classList.toggle('active')
+    })
+}

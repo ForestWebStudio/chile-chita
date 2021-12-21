@@ -6,8 +6,9 @@
     margin-bottom: 70px
     position: sticky
     left: 0
-    top: 0
+    top: 88px
     z-index: 5
+    width: 100%
     background-color: #fff
     &-list
         padding: 0
@@ -20,7 +21,58 @@
             font-weight: 400
             font-size: 16px
             color: $d
+            transition: color .3s
+            &:hover
+                color: $d3
         a.active
             font-weight: 600
-            padding-bottom: 20px
+            padding-bottom: 5px
             border-bottom: 3px solid #DF3663
+            padding-bottom: 20px
+            transition: color .3s
+            &:hover
+                color: $d
+
+        .about__menu-list--more
+            a.active
+                font-weight: 600
+                border-bottom: 3px solid #DF3663
+                padding-bottom: 0
+
+.about__menu-list--more
+    display: none
+    animation: dropdown .5s
+    position: absolute
+    top: 30px
+    left: 50%
+    transform: translateX(-50%)
+    padding: 10px
+    background-color: #fff
+    border-radius: 10px
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+    li:not(:last-child)
+        margin-bottom: 15px
+
+
+.about__menu-dropdown
+    position: relative
+    &:hover
+        .about__menu-list--more
+            display: block
+    span
+        font-weight: 400
+        font-size: 16px
+        color: $d
+        cursor: pointer
+        position: relative
+        padding-bottom: 20px
+
+@media (max-width: 650px)
+    .about__menu
+        top: 83px
+        
+@keyframes dropdown
+    0%
+        opacity: 0
+    100%
+        opacity: 1

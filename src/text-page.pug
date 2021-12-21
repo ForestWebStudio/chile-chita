@@ -1,0 +1,13 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Текстовая страница'
+    - var pageClass = 'text'
+    - var menuHref = '/'
+
+block header
+    include ./components/header/header
+block content
+    include ./components/text/text
+block footer  
+    include ./components/footer/footer

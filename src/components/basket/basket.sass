@@ -18,18 +18,31 @@
         height: 24px
     span
         font-weight: 600
-        font-size: 17px
+        font-size: 13px
         line-height: 30px
-        color: #A6B3C8
+        color: #fff
         display: flex
         justify-content: center
         align-items: center
-        width: 30px
-        height: 30px
-        border-radius: 100%
-        background-color: rgba(#A6B3C8, 0.1)
+        width: 56px
+        height: 34px
+        border-radius: 30px
+        background-color: #DF3663
         margin-left: 6px
         transition: .3s
+    i
+        font-family: inherit
+        font-style: normal
+        font-size: inherit
+        margin-left: 5px
+
+@media (max-width: 1200px)
+    .basket
+        margin-left: auto
+
+@media (max-width: 991px)
+    .basket
+        margin-left: auto
 
 @media (max-width: 820px)
     .basket
@@ -41,16 +54,7 @@
             width: 30px
             height: 30px
         span
-            width: 34px
-            height: 34px
-            font-size: 17px
-            line-height: 30px
             margin-left: 0
-            & .active
-                background-color: #fff
 
 @media (max-width: 650px)
-    .basket
-        padding-left: 15px
-        margin-left: 15px
-        border-left: 1px solid #F1F1F1
+

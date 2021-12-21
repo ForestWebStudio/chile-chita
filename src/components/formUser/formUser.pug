@@ -7,7 +7,7 @@
             +icon('map')
             | Самовывоз из ресторана
     .form__user-items 
-        .form__user-item.active#tab_1 
+        form.form__user-item.active#tab_1(action="#")  
             h3 Контактные данные
             .form__user-name.form__title 
                 h4 Данные получателя
@@ -18,7 +18,7 @@
                             | Ваше имя 
                             i *
                     .form__input
-                        input(type="phone" id="phone" required)
+                        input(type="tel" id="phone" required)
                         label(for="phone") 
                             | Ваше телефон 
                             i *
@@ -32,13 +32,13 @@
                         input(type="text" id="home" required)
                         label(for="home") Дом
                     .form__input 
-                        input(type="text" id="entrance" required)
+                        input(type="text" id="entrance" )
                         label(for="entrance") Подъезд
                     .form__input 
-                        input(type="text" id="floor" required)
+                        input(type="text" id="floor" )
                         label(for="floor") Этаж
                     .form__input 
-                        input(type="text" id="apartment" required)
+                        input(type="text" id="apartment" )
                         label(for="apartment") Квартира
             .form__user-time.form__title 
                 h4 Время доставки
@@ -48,28 +48,34 @@
             .form__user-pay.form__title
                 h4 Оплата
                 .form__user-ways 
-                    input(type="radio" name="pay2" id="cash2")
+                    input(type="radio" name="pay2" id="cash2" )
                     label(for="cash2") 
                         strong Наличными курьеру
                         span При получении заказа
 
-                    input(type="radio" name="pay2" id="cart2")
+                    input(type="radio" name="pay2" id="cart2" )
                     label(for="cart2") 
                         strong Картой курьеру
                         span Картами Visa, #[br] MasterCard, Мир
-                    input(type="radio" name="pay2" id="site2")
+                    input(type="radio" name="pay2" id="site2" )
                     label(for="site2") 
                         strong Картой на сайте
                         span Картами Visa, #[br] MasterCard, Мир
-                    input(type="radio" name="pay2" id="pickup2")
+                    input(type="radio" name="pay2" id="pickup2" )
                     label(for="pickup2") 
                         strong При самовывозе
                         span Оплата в магазине
             .form__user-comment.form__title
                 h4 Комментарий
-                textarea(name="comment")
+                textarea(type="comment")
+            button(type="submit") Оформить заказ
+            .form__user-police
+                input(type="checkbox" id="police")
+                label(for="police") 
+                    | Нажимая на кнопку «Оформить заказ», я даю согласие на обработку 
+                    i персональных данных
 
-        .form__user-item#tab_2 
+        form.form__user-item#tab_2(action="#") 
             h3 Контактные данные
             .form__user-name.form__title 
                 h4 Данные получателя
@@ -80,7 +86,7 @@
                             | Ваше имя 
                             i *
                     .form__input
-                        input(type="phone" id="phone" required)
+                        input(type="tel" id="phone" required)
                         label(for="phone") 
                             | Ваше телефон 
                             i *
@@ -129,13 +135,19 @@
                         span Оплата в магазине
             .form__user-comment.form__title
                 h4 Комментарий
-                textarea(name="comment")
-        button(type="submit" disabled) Оформить заказ
-        .form__user-police
-            input(type="checkbox" id="police")
-            label(for="police") 
-                | Нажимая на кнопку «Оформить заказ», я даю согласие на обработку 
-                i персональных данных
+                textarea(type="comment")
+            button(type="submit") Оформить заказ
+            .form__user-police
+                input(type="checkbox" id="police-2")
+                label(for="police-2") 
+                    | Нажимая на кнопку «Оформить заказ», я даю согласие на обработку 
+                    i персональных данных
+        //- button(type="submit") Оформить заказ
+        //- .form__user-police
+        //-     input(type="checkbox" id="police")
+        //-     label(for="police") 
+        //-         | Нажимая на кнопку «Оформить заказ», я даю согласие на обработку 
+        //-         i персональных данных
 
 
 

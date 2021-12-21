@@ -1,0 +1,21 @@
+.modal.modal-address.title#modal-address(style="display: none;")
+    h4 Укажите адрес доставки
+    form.form__address(action="#") 
+        .modal__input.form__input
+            input(type="text" id="street" required)
+            label(for="street") Улица
+        .modal__address-grid 
+            .modal__input.form__input
+                input(type="text" id="home" required)
+                label(for="home") Дом
+            .modal__input.form__input
+                input(type="text" id="entrance" )
+                label(for="entrance") Подъезд
+            .modal__input.form__input
+                input(type="text" id="floor" )
+                label(for="floor") Этаж
+            .modal__input.form__input
+                input(type="text" id="apartment" )
+                label(for="apartment") Квартира
+        button.modal(type="submit") Оформить заказ
+        

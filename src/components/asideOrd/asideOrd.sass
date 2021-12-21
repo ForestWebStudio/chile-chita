@@ -14,9 +14,17 @@
         display: flex
         justify-content: center
         align-items: center
+        position: relative
+        &:hover
+            svg
+                fill: $hover
+    a.active
+        svg
+            fill: #FF858E
     svg
         width: 24px
         height: 24px
+        transition: fill .3s
 
 .ordering__aside-box
     p

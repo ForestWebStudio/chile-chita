@@ -1,0 +1,50 @@
+.navbar
+    display: none
+    padding: 12px 17px
+    position: fixed
+    width: 100%
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #fff
+    z-index: 50
+    &__list
+        padding: 0
+        margin: 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        li + li
+            padding-left: 7%
+            margin-left: 4%
+            border-left: 1px solid #F1F1F1
+
+        a
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 15px
+            line-height: 18px
+            color: $d
+            transition: color .3s
+            &:hover
+                color: #DF3663
+            &:focus
+                color: #DF3663
+        svg
+            width: 22px
+            height: 22px
+            margin-bottom: 1px
+
+
+@media (max-width: 768px)
+    .navbar
+        display: block
+
+@media (max-width: 550px)
+    .navbar__list 
+        a
+            font-size: 10px
+        

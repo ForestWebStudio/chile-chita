@@ -1,5 +1,6 @@
 .cart
     max-width: 340px
+    position: relative
     height: auto
     width: 100%
     padding: 10px
@@ -10,7 +11,9 @@
     border-radius: 30px
     position: sticky
     top: 0
-    right: 0 
+    right: 0
+    overflow: hidden
+    transition: top 1s
 
 .cart__form-header
     display: flex
@@ -26,14 +29,72 @@
     a
         width: 24px
         height: 24px
-
+        position: relative
         &:hover svg
             fill: $hover
+    a.active
+        svg
+            fill: #FF858E
     svg
         width: 100%
         height: 100%
         fill: $d3
         transition: fill .3s
+
+.cart__delete
+    position: absolute
+    left: -175px
+    top: 30px
+    padding: 20px
+    padding-top: 25px
+
+    background-color: #fff
+    border: 1px solid #F1F1F1
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+    border-radius: 30px
+    z-index: 22
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    display: none
+    h5
+        margin: 0
+        padding: 0
+        font-weight: 600
+        font-size: 16px
+        line-height: 19px
+        margin-bottom: 14px
+        color: $d
+    .cart__delete-btns
+        display: flex
+        justify-content: space-between
+        align-items: center
+        button
+            width: 80px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #DF3663
+            border-radius: 40px
+            font-weight: 600
+            font-size: 16px
+            color: #fff
+            transition: background-color .3s
+            &:hover
+                background-color: $hover
+        button + button
+            margin-left: 10px
+
+.cart__delete.active
+    display: flex
+
+.ordering__aside-header 
+    .cart__delete
+        top: 56px
+        left: -160px
+
 
 .cart__list
     padding: 0 20px
@@ -177,3 +238,75 @@
     &:hover
         background-color: $hover
 
+.cart__null
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #fff
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+    border-radius: 30px
+    img
+        margin-bottom: 20px
+    h4
+        font-weight: 600
+        font-size: 24px
+        line-height: 30px
+        color: $d
+        max-width: 170px
+        text-align: center
+
+.cart__address
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+    background-image: url("../images/map.webp")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    h4
+        font-weight: 700
+        font-size: 24px
+        line-height: 30px
+        max-width: 190px
+        text-align: center
+        color: $d
+    img
+        margin-top: auto
+        margin-bottom: 10px
+    a
+        font-weight: 700
+        font-size: 15px
+        line-height: 30px
+        color: #fff
+        margin-top: auto
+        margin-bottom: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 15px 34px
+        background-color: #DF3663
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        transition: background-color .3s
+        &:hover
+            background-color: $hover
+    svg
+        margin-right: 5px
+
+@media (max-width: 991px)
+    .cart__null
+        display: none

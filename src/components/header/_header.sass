@@ -21,7 +21,6 @@
         align-items: center
         transition: .3s
         margin-right: auto
-        margin-left: auto
         span
             position: relative
             &::after
@@ -45,6 +44,23 @@
             height: 24px
     &__basket
         margin-right: 30px
+
+.header.header--scroll
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    background-color: #fff
+    padding-top: 20px
+    padding-bottom: 20px
+    z-index: 999
+    transition: all .2s
+    padding-top: 15px
+    .header__address
+        display: none
+    .basket
+        margin-left: auto
+        
 
 @media (max-width: 1200px)
     .header
@@ -75,4 +91,4 @@
         margin-right: 0
         width: 102px
         height: 38px
-                    
+
